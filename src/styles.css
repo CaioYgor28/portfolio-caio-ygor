@@ -87,6 +87,8 @@ section, footer { position: relative; }
 .project-action { align-self: end; justify-self: end; padding-bottom: .15rem; }
 .external-link { align-items: center; display: inline-flex; gap: .55rem; }
 .project-action .external-link { color: white; }
+.project-links { align-items: flex-end; display: flex; flex-direction: column; gap: .75rem; }
+.project-links .external-link { white-space: nowrap; }
 
 .experience { padding-bottom: 8rem; }
 .experience-grid { display: grid; gap: 9vw; grid-template-columns: 1fr 1fr; padding: 7rem 6vw 0 10vw; }
@@ -169,6 +171,7 @@ section, footer { position: relative; }
   .project-card:hover { padding-left: 0; padding-right: 0; }
   .project-content h3 { font-size: 3.3rem; }
   .project-action { grid-column: 2; justify-self: start; margin-top: 1rem; }
+  .project-links { align-items: flex-start; }
   .experience { padding-bottom: 5rem; }
   .experience-grid { padding: 4rem 5vw 0; }
   .technology { padding-bottom: 5rem; }

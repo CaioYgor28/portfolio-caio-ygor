@@ -25,14 +25,17 @@ const projects = [
   },
   {
     number: "03",
-    type: "GO · PROJETO EM PARCERIA",
+    type: "FULL-STACK · MOBILE · WEB · API",
     title: "RetailOps",
-    subtitle: "Projeto em Go voltado a operações de varejo.",
+    subtitle: "Operações de varejo conectadas entre mobile, web e backend.",
     description:
-      "Aplicação desenvolvida em Go com foco em operações de varejo, criada em parceria e publicada na organização Dev Primacy no GitHub.",
-    stack: ["Go"],
-    href: "https://github.com/devprimacy/RetailOps",
-    cta: "VER NO GITHUB",
+      "Solução dividida em três aplicações complementares: app mobile para a operação, painel web para gestão e backend em Go responsável pelas regras de negócio, dados e integrações.",
+    stack: ["Go", "React", "TypeScript", "React Native", "Expo", "SQLite", "APIs REST"],
+    links: [
+      { label: "MOBILE", href: "https://github.com/devprimacy/DevPrimacy-RetailOps-Mobile" },
+      { label: "WEB", href: "https://github.com/devprimacy/DevPrimacy-RetailOps-Web" },
+      { label: "BACKEND", href: "https://github.com/devprimacy/DevPrimacy-RetailOps" },
+    ],
     credit: "Projeto desenvolvido com Andrew Benvenuto",
   },
 ];
@@ -119,7 +122,17 @@ export default function Home() {
                 <ul aria-label={`Tecnologias de ${project.title}`}>{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
               </div>
               <div className="project-action">
-                {project.href ? <ExternalLink href={project.href}>{project.cta}</ExternalLink> : <span>{project.status}</span>}
+                {project.links ? (
+                  <div className="project-links" aria-label={`Repositórios de ${project.title}`}>
+                    {project.links.map((link) => (
+                      <ExternalLink href={link.href} key={link.href}>{link.label}</ExternalLink>
+                    ))}
+                  </div>
+                ) : project.href ? (
+                  <ExternalLink href={project.href}>{project.cta}</ExternalLink>
+                ) : (
+                  <span>{project.status}</span>
+                )}
               </div>
             </article>
           ))}
