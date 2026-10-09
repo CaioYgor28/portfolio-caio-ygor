@@ -25,12 +25,12 @@ const projects = [
   },
   {
     number: "03",
-    type: "FULL-STACK · MOBILE · WEB · API",
+    type: "PLATAFORMA · MOBILE · WEB · API",
     title: "RetailOps",
-    subtitle: "Operações de varejo conectadas entre mobile, web e backend.",
+    subtitle: "Operação de varejo do coletor ao painel de gestão.",
     description:
-      "Solução dividida em três aplicações complementares: app mobile para a operação, painel web para gestão e backend em Go responsável pelas regras de negócio, dados e integrações.",
-    stack: ["Go", "React", "TypeScript", "React Native", "Expo", "SQLite", "APIs REST"],
+      "Ecossistema em três aplicações: coletor Android com leitura de códigos e operação offline, painel web para gestão e API em Go que centraliza catálogo, registros, autenticação de dispositivos e integrações, com PostgreSQL e deploy containerizado na AWS.",
+    stack: ["Go", "PostgreSQL", "React", "TypeScript", "React Native", "Expo", "SQLite", "Docker", "AWS", "Nginx"],
     links: [
       { label: "MOBILE", href: "https://github.com/devprimacy/DevPrimacy-RetailOps-Mobile" },
       { label: "WEB", href: "https://github.com/devprimacy/DevPrimacy-RetailOps-Web" },
