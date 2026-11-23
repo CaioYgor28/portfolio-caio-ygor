@@ -35,6 +35,18 @@ const projects = [
     credit: "Co-developed with Andrew Benvenuto. Repository links are omitted until public access is confirmed.",
     status: "PROJECT OVERVIEW",
   },
+  {
+    number: "04",
+    type: "SAAS PROTOTYPE · IN DEVELOPMENT",
+    title: "LittUp",
+    subtitle: "Customer relationships, sales tracking, and repurchase insights.",
+    description:
+      "Developing a business management platform for small teams, with customer records, sales history, targets, and repurchase indicators. An API-backed version is being prepared using Go and PostgreSQL, with business-scoped data and session-based authentication.",
+    insights:
+      "Engineering focus: multi-tenant isolation, reliable data persistence, secure authentication, and gradual product validation. The current Go/PostgreSQL build remains in local testing and is not a production release.",
+    stack: ["Go", "PostgreSQL", "JavaScript", "Cloudflare Workers", "Docker"],
+    status: "IN DEVELOPMENT · PRIVATE SOURCE",
+  },
 ];
 
 const technologies = [
