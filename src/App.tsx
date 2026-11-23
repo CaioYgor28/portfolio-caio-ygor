@@ -120,17 +120,7 @@ export default function Home() {
                 <ul aria-label={`Technologies used in ${project.title}`}>{project.stack.map((item) => <li key={item}>{item}</li>)}</ul>
               </div>
               <div className="project-action">
-                {project.links ? (
-                  <div className="project-links" aria-label={`Repositories for ${project.title}`}>
-                    {project.links.map((link) => (
-                      <ExternalLink href={link.href} key={link.href}>{link.label}</ExternalLink>
-                    ))}
-                  </div>
-                ) : project.href ? (
-                  <ExternalLink href={project.href}>{project.cta}</ExternalLink>
-                ) : (
-                  <span>{project.status}</span>
-                )}
+                <span>{project.status}</span>
               </div>
             </article>
           ))}
