@@ -11,7 +11,7 @@ const projects = [
       "Designed and delivered an end-to-end experience for guests, including RSVP management, a gift registry, payments, and an administrative dashboard. The public website was decommissioned after the event.",
     insights:
       "Engineering focus: third-party API integrations, secure administrative access, operational auditing, and balancing free service tiers with paid hosting and domain costs. No personal guest or payment data is publicly shared.",
-    stack: ["React", "TypeScript", "Hono", "Supabase", "Mercado Pago", "Resend", "Tailscale", "AWS"],
+    stack: ["React", "TypeScript", "Hono", "SQLite", "Mercado Pago", "Resend", "Tailscale", "AWS"],
     status: "ARCHIVED AFTER THE EVENT",
   },
   {
